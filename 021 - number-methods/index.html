@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Number Methods</title>
+</head>
+<body>
+		<h1>JavaScript Number Methods</h1>
+
+		<!-- <h2>Number Methods and Properties</h2> -->
+		
+			<!-- <h2>the toString() Method - Example 1</h2>
+
+			<p>The toString() method converts a number to a string.</p>
+
+			<p id="demo"></p>
+
+			<script>
+			var x = 123;
+			document.getElementById("demo").innerHTML = x.toString() + "<br>" +
+			(123).toString() + "<br>" +
+			(100 + 23).toString();
+			</script> -->
+
+		<!-- The toExponential() Method -->
+
+			<!-- <p>the toExponential() method returns a string, with the number rounded and written using exponential notation.</p>
+
+			<p>An optional parameter defines the number of digits behind the decimal point.</p>
+
+			<p id="demo"></p>
+
+			<script>
+				var x = 9.656;
+				document.getElementById("demo").innerHTML =
+					x.toExponential( ) + "<br>" +
+					x.toExponential(2) + "<br>" +
+					x.toExponential(4) + "<br>" +
+					x.toExponential(6);
+			</script> -->
+
+		<!-- The toFixed() Method -->
+
+			<!-- <p>The toFixed() method rounds a number to a given number of digits.</p>
+			<p>For working with money, toFixed(2) is perfect.</p>
+
+			<p id="demo"></p>
+
+			<script>
+				var x = 9.656;
+				document.getElementById("demo").innerHTML =
+						x.toFixed(0) + "<br>" +
+						x.toFixed(2) + "<br>" +
+						x.toFixed(4) + "<br>" +
+						x.toFixed(6);
+			</script> -->
+
+		<!-- The toPrecision() Method	 -->
+
+			<!-- <p>The toPrecision() method returns a string, with a number written with a specified length:</p>
+			
+			<p id="demo"></p>
+
+			<script>
+				var x = 9.656;
+				document.getElementById("demo").innerHTML = 
+					x.toPrecision( ) + "<br>" +
+					x.toPrecision(2) + "<br>" +
+					x.toPrecision(4) + "<br>" +
+					x.toPrecision(6);
+			</script> -->
+
+		<!-- The valueOf() Method -->
+
+			<!-- <p>The valueOf() method returns a number as a number:</p>
+
+			<p id="demo"></p>
+
+			<script>
+			var x = 123;
+			document.getElementById("demo").innerHTML =
+				x.valueOf() + "<br>" +
+				(123).valueOf() + "<br>" +
+				(100 + 23).valueOf();
+			</script> -->
+
+		<!-- Converting Variables to Number Methods	 -->
+
+		<!-- Global JavaScript Methods -->
+
+		<!-- The Number() Method -->
+
+			<!-- <p>The Number() method converts variables to numbers:</p>
+
+			<p id="demo"></p>
+
+			<script>
+				document.getElementById("demo").innerHTML = 
+				Number(true)  + "<br>" +
+				Number(false) + "<br>" +
+				Number("10") 	+ "<br>" +
+				Number("   10") + "<br>" +
+				Number("10   ") 	+ "<br>" +
+				Number(" 10  ") + "<br>" +
+				Number("10.33") + "<br>" +
+				Number("10,33") + "<br>" +
+				Number("10 33") + "<br>" +
+				Number("10 33");
+			</script> -->
+
+		<!-- The Number() Method Use on Dates -->
+
+			<!-- <p>The Number() method can convert a date to a number:</p>
+
+			<p id="demo"></p>
+
+			<script>
+				var x = new Date("2017-09-30");
+				document.getElementById("demo").innerHTML = Number(x);
+			</script> -->
+
+		<!-- The parseInt() Method -->
+			
+			<!-- <p>The global JavaScript function parseInt() converts strings to numbers:</p>
+
+			<p id="demo"></p>
+
+			<script>
+				document.getElementById("demo").innerHTML =
+				 parseInt("10") 			+ "<br>" +
+				 parseInt("10.33") 		+ "<br>" +
+				 parseInt("10 6") 		+ "<br>" +
+				 parseInt("10 years") + "<br>" +
+				 parseInt("years 10");
+			</script> -->
+
+		<!-- <p>The parseFloat() method converts strings to numbers:</p>
+
+			<p id="demo"></p>
+	
+			<script>
+				document.getElementById("demo").innerHTML = 
+				parseFloat("10") 				+ "<br>" +
+				parseFloat("10.33") 		+ "<br>" +
+				parseFloat("10 6") 			+ "<br>" +
+				parseFloat("10 years") 	+ "<br>" +
+				parseFloat("years 10");
+			</script> -->
+
+		<!-- Number Properties - Max Value -->
+
+			<!-- <p>MAX_VALUE returns the largest possible number in JavaScript.</p>
+
+			<p id="demo"></p>
+
+			<script>
+				var x = Number.MAX_VALUE;
+				document.getElementById("demo").innerHTML = x;
+			</script> -->
+
+		<!-- Number Properties - Min Value -->
+
+			<!-- <p>MIN_VALUE returns the smallest number possible in JavaScript.</p>
+
+			<p id="demo"></p>
+			
+			<script>
+				var x = Number.MIN_VALUE;
+				document.getElementById("demo").innerHTML = x;
+			</script> -->
+
+		<!-- JavaScript POSITIVE_INFINITY - Example 1 -->
+
+			<!-- <p>POSITIVE_INFINITY</p>
+
+			<p id="demo"></p>
+
+			<script>
+				var x = Number.POSITIVE_INFINITY;
+				document.getElementById("demo").innerHTML = x
+			</script> -->
+		
+		<!-- JavaScript POSITIVE_INFINITY - Example 2 -->
+		
+			<!-- <p>POSITIVE_INFINITY is returned on overflow:</p>
+
+			<p id="demo"></p>
+
+			<script>
+				var x = 1 / 0;
+				document.getElementById("demo").innerHTML = x;
+			</script> -->
+		
+		<!-- JavaScript NEGATIVE_INFINITY - Example 1 -->
+			
+			<!-- <p>NEGATIVE_INFINITY</p>
+
+			<p id="demo"></p>
+
+			<script>
+				var x = Number.NEGATIVE_INFINITY;
+				document.getElementById("demo").innerHTML = x;
+			</script> -->
+		
+		<!-- JavaScript NEGATIVE_INFINITY - Example 2 -->
+
+			<!-- <p>NEGATIVE_INFINITY</p>
+
+			<p id="demo"></p>
+		
+			<script>
+				var x = -1 / 0;
+				document.getElementById("demo").innerHTML = x;
+			</script> -->
+
+		<!-- JavaScript NaN - Not a Number - Example 1 -->
+
+			<!-- <p id="demo"></p>
+
+			<script>
+				document.getElementById("demo").innerHTML = Number.NaN;
+			</script> -->
+
+		<!-- JavaScript NaN - Not a Number - Example 1 -->
+			
+			<!-- <p>A number divided by a non-numeric string becomes NaN (Not a Number):</p>
+
+			<p id="demo"></p>
+
+			<script>
+			document.getElementById("demo").innerHTML = 100 / "Apple";
+			</script> -->
+
+		<!-- Number Properties Cannot be Used on Variables -->
+			
+			<p>Using a Number property on a variable, expression, or value, will return undefined:</p>
+
+			<script>
+				var x = 6;
+				document.getElementById("demo").innerHTML = x.MAX_VALUE;
+			</script>
+
+		<!-- Complete JavaScript Number Reference -->
+
+
+			
+
+		
+	</body>
+	</html>

@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Array Iteration Methods</title>
+</head>
+<body>
+	<h1>Array Iteration Methods</h1>
+
+	<!-- <h2>JavaScript Array.forEach</h2>
+
+		<p>Calls a function once for each array element.</p>
+		
+		<p id="demo"></p>
+
+			<script>
+				var txt = "";
+				var numbers = [45, 4, 9, 16, 25];
+				numbers.forEach(myFunction);
+				document.getElementById("demo").innerHTML = txt;
+
+				function myFunction(value, index, array) {
+					txt = txt + value + "<br>";
+				}
+			</script>  -->
+		
+		<!-- <h2>JavaScript Array.forEach</h2>
+
+			<p>Calls a function once for each array element.</p>
+
+			<p id="demo"></p>
+
+			<script>
+				let txt = "";
+				let numbers = [45, 4, 9, 16, 25];
+				numbers.forEach(myFunction);
+				document.getElementById("demo").innerHTML = txt;
+
+				function myFunction(value) {
+				txt = txt + " " + value + "<br>";
+				}
+			</script> -->
+
+		<!-- Example - JavaScript Array.map() -->
+
+			<!-- <p>Creates a new array by performing a function on each array element.</p>
+
+			<p id="demo"></p>
+
+			<script>
+				let numbers1 = [45, 4, 9, 16, 25];
+				let numbers2 = numbers1.map(myFunction);
+
+				document.getElementById("demo").innerHTML = numbers2;
+
+				function myFunction(value, index, array) {
+					return value * 2;
+				}
+			</script> -->
+
+		<!-- Example - JavaScript Array.map() -->
+
+			<!-- <p>Creates a new array by performing a function on each array element.</p>
+
+			<p id="demo"></p>
+
+			<script>
+				let numbers1 = [45, 4, 9, 16, 25];
+				let numbers2 = numbers1.map(myFunction);
+
+				document.getElementById("demo").innerHTML = numbers2;
+
+				function myFunction(value) {
+					return value * 2
+				}
+ 			</script> -->
+
+		<!-- Example 1 - JavaScript Array.filter() -->
+
+			<!-- <p>Creates a new array with all array elements that passes a test.</p>
+			
+			<p id="demo"></p>
+
+			<script>
+				let numbers = [45, 4, 9, 16, 25];
+				let over18 = numbers.filter(myFunction);
+				
+				document.getElementById("demo").innerHTML = over18;
+
+				function myFunction(value, index, array) {
+					return value > 18;
+				}
+			</script> -->
+		
+		<!-- Example 2 - JavaScript Array.filter() -->
+
+			<!-- <p>Creates a new array with all array elements that passes a test.</p>
+
+			<p id="demo"></p>
+
+			<script>
+				let numbers = [45, 4, 9, 16, 25];
+				let over18 = numbers.filter(myFunction);
+
+				document.getElementById("demo").innerHTML = over18;
+
+				function myFunction(value) {
+					return value > 18;
+				}
+			</script> -->
+		
+		<!-- Example 1 - JavaScript Array.reduce() -->
+			
+			<!-- <p>This example finds the sum of all numbers in an array:</p>
+
+			<p id="demo"></p>
+
+			<script>
+				let numbers = [45, 4, 9, 16, 25];
+				let sum = numbers.reduce(myFunction);
+
+				document.getElementById("demo").innerHTML = "This sum is " + sum;
+
+				function myFunction(total, value, index, array) {
+					return total + value;
+				}
+			</script> -->
+
+		<!-- Example 2 - JavaScript Array.reduce() -->
+		
+			<!-- <p>This example finds the sum of all numbers in an array:</p>
+
+			<p id="demo"></p>
+
+			<script>
+				let numbers = [45, 4, 9, 16, 25];
+				let sum = numbers.reduce(myFunction);
+
+				document.getElementById("demo").innerHTML = "This sum is" + sum;
+				function myFunction(total, value,) {
+					return  total + value;
+				}
+			</script> -->
+
+		<!-- Example 3 - JavaScript Array.reduce() -->
+
+			<!-- <p>This example finds the sum of all numbers in an array:</p>
+
+			<p id="demo"></p>
+
+			<script>
+				let numbers = [45, 4, 9, 16, 25];
+				let sum = numbers.reduce(myFunction, 100);
+
+				document.getElementById("demo").innerHTML = "This sum is " + sum;
+
+				function myFunction(total, value) {
+					return total + value;
+				}
+			</script> -->
+
+		<!-- <p> Example 1 - Array.reduceRight()</p> -->
+
+			<!-- <p>This example finds the sum of all numbers in an array:</p>
+
+			<p id="demo"></p>
+
+			<script>
+				let numbers = [45, 4, 9, 16, 25];
+				let sum = numbers.reduceRight(myFunction);
+
+				document.getElementById("demo").innerHTML = "This sum is " + sum;
+
+				function myFunction(total, value, index, array) {
+					return total + value;
+				}
+			</script> -->
+
+		<!-- <p> Example 2 - Array.reduceRight()</p> -->
+
+			<!-- <p>This example finds the sum of all numbers in an array:</p>
+
+			<p id="demo"></p>
+
+			<script>
+				let numbers = [45, 4, 9, 16, 25];
+				let sum = numbers.reduceRight(myFunction);
+
+				document.getElementById("demo").innerHTML = "This sum is " + sum;
+
+				function myFunction(total, value) {
+					return total + value;
+				}
+			</script> -->
+
+		<!-- <p>Example 1 - Array.every()</p> -->
+
+			<!-- <p>The every() method check if all arrays values pass a test.</p>
+
+			<p id="demo"></p>
+
+			<script>
+				let numbers = [45, 4, 9, 16, 25];
+				let allOver18 = numbers.every(myFunction);
+
+				document.getElementById("demo").innerHTML = "All over 18 is " + allOver18;
+
+				function myFunction(value, index, array) {
+					return value > 18;
+				}
+			</script> -->
+
+		<!-- <p>Example 2 - Array.every()</p> -->
+
+			<!-- <p>The every() method checks if all arrays values pass a test.</p>
+
+			<p id="demo"></p>
+
+			<script>
+				let numbers = [45, 4, 9, 16, 25];
+				let allOver18 = numbers.every(myFunction);
+
+				document.getElementById("demo").innerHTML = "All over 18 is " + allOver18;
+
+				function myFunction(value) {
+					return value > 18;
+				}
+			</script> -->
+
+		<!-- Example 1 - Array.some() -->
+
+			<!-- <p>The some() method checks if some array values pass a test.</p>
+
+			<p id="demo"></p>
+
+			<script>
+				let numbers = [45, 4, 9, 16, 25];
+				let someOver18 = numbers.some(myFunction);
+
+				document.getElementById("demo").innerHTML = "Some over 18 is " + someOver18;
+
+				function myFunction(value, index, array) {
+					return value > 18;
+				}
+			</script> -->
+
+		<!-- Example - Array.indexOf() -->
+
+			<!-- <p id="demo"></p>
+
+			<script>
+				let fruits = ["Apple", "Orange", "Apple", "Mango"];
+				let a = fruits.indexOf("Apple");
+				document.getElementById("demo").innerHTML = "Apple is found in position " + a;
+			</script>
+
+			<p>The indexOf() does not work in Internet Explorer 8 and earlier versions.</p> -->
+
+		<!-- Example - Array.lastIndexOf() -->
+
+			<!-- <p id="demo"></p>
+
+			<script>
+				let fruits = ["Apple", "Orange", "Apple", "Mango"];
+				let a = fruits.lastIndexOf("Apple");
+				document.getElementById("demo").innerHTML = "Apple is found in position " + (a + 1);
+			</script>
+
+			<p>The lastIndexOf() does not work in Internet Explorer 8 and earlier versions.</p> -->
+		
+		<!-- Example - Array.find() -->
+
+			<!-- <p id="demo"></p>
+
+			<script>
+				let numbers = [45, 4, 9, 16, 25, 29];
+				let first = numbers.find(myFunction);
+
+				document.getElementById("demo").innerHTML = "First number over 18 is " + first;
+
+				function myFunction(value, index, array) {
+					return value > 18;
+				}
+			</script> -->
+		
+		<!-- Example - Array.findIndex() -->
+
+			<p id="demo"></p>
+
+			<script>
+				let numbers = [4, 9, 16, 25, 29];
+				let first = numbers.findIndex(myFunction);
+
+				document.getElementById("demo").innerHTML = "First number over 18 has index " + first;
+
+				function myFunction(value, index, array) {
+					return value > 18;
+				}
+			</script>
+			
+		
+
+
+
+
+
+</body>
+</html>

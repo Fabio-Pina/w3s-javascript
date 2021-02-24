@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Get Date Methods</title>
+</head>
+<body>
+	<h2>Get Date Methods</h2>
+	
+		<!-- Method								Description
+		
+		getFullYear()							Get the year as a four digit number (yyyy)
+		getMonth()								Get the month as a number (0-11)
+		getDate()									Get the day as a number (1-31)
+		getHours()								Get the hour (0-23)
+		getMinutes()							Get the minute (0-59)
+		getSeconds()							Get the second (0-59)
+		getMilliseconds()					Get the millisecond (0-999)
+		getTime()									Get the time (milliseconds since January 1, 1970)
+		getDay()									Get the weekday as a number (0-6)
+		Date.now()								Get the time. ECMAScript 5.			 -->
+
+		<!-- The getTime() Method -->
+
+			<!-- <p>The internal clock in JavaScript counts from midnight January 1, 1970.</p>
+			<p>The getTime() function returns the number of milliseconds since then:</p>
+	
+			<p id="demo"></p>
+
+			<script>
+				let d = new Date();
+				document.getElementById("demo").innerHTML = d.getTime();
+			</script> -->
+		
+		<!-- The getFullYear() Method	 -->
+	
+			<!-- <p>The getFullYear() method returns the full year of a date:</p>
+
+			<p id="demo"></p>
+
+			<script>
+				var d = new Date();
+				document.getElementById("demo").innerHTML = d.getFullYear();
+			</script> -->
+
+		<!-- The getMonth() Method - Example 1 -->
+
+			<!-- <p>The getMonth() method returns the month of a date as a number from 0 to 11.</p>
+			<p>To get the correct month, you must add 1:</p>
+
+			<p id="demo"></p>
+
+			<script>
+				var d = new Date();
+				document.getElementById("demo").innerHTML = d.getMonth() + 1;
+			</script> -->
+		
+		<!-- The getMonth() Method - Example 1 -->
+
+			<!-- <p>The getMonth() method returns the month as a number:</p>
+		
+			<p>You can use an array to display the name of the month:</p>
+
+			<p id="demo"></p>
+			
+			<script>
+				var d = new Date();
+				var months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+				document.getElementById("demo").innerHTML = months[d.getMonth()];
+			</script> -->
+
+		<!-- The getDay() Method -->
+		
+			<!-- <p>The getDate() method returns the day of a date as a number (1-31):</p>
+
+			<p id="demo"></p>
+
+			<script>
+				var d = new Date();
+				document.getElementById("demo").innerHTML = d.getDate();
+			</script> -->
+
+		<!-- The getHours() Method -->
+
+			<!-- <p>The getHours() method returns the hours of a date as a number (0-23):</p>
+
+			<p id="demo"></p>
+
+			<script>
+				var d = new Date();
+				document.getElementById("demo").innerHTML = d.getHours();
+			</script> -->
+
+		<!-- The getMinutes() Method -->
+
+			<!-- <p>The getMinutes() method returns the minutes of a date as a number (0-59):</p>
+			
+			<p id="demo"></p>
+
+			<script>
+				var d = new Date();
+				document.getElementById("demo").innerHTML = d.getMinutes();
+			</script> -->
+
+		<!-- The getSeconds() Method -->
+
+			<!-- <p>The getSeconds() method returns the seconds of a date as a number (0-59):</p>
+			
+			<p id="demo"></p>
+
+			<script>
+				var d = new Date();
+				document.getElementById("demo").innerHTML = d.getSeconds();
+			</script> -->
+
+		<!-- The getMilliseconds() Method -->
+
+			<!-- <p>The getMilliseconds() method returns the milliseconds of a date as a number (0-999):</p>
+
+			<p id="demo"></p>
+
+			<script>
+				var d = new Date()
+				document.getElementById("demo").innerHTML = d.getMilliseconds()
+			</script> -->
+		
+		<!-- The getDay() Method - Example 1 -->
+		
+			<!-- <p>The getDay() method returns the weekday 
+			as a number:</p>
+
+			<p id="demo"></p>
+
+			<script>
+				var d = new Date()
+				document.getElementById("demo").innerHTML = d.getDay()
+			</script> -->
+		
+		<!-- The getDay() Method - Example 2 -->
+
+			<!-- <p>The getDay() method returns the weekday as a number:</p>
+
+			<p>You can use an array to display the name of the weekday:</p>
+
+			<p id="demo"></p>
+
+			<script>
+				var d = new Date()
+				var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+				document.getElementById("demo").innerHTML = days[d.getDay()]
+			</script> -->
+
+		<!-- UTC Date Methods -->
+		
+			<!-- <p>UTC date methods are used for working with UTC dates (Universal Time Zone dates):</p>	 -->
+
+			<!-- Method						Description
+			getUTCDate()					Same as getDate(), but returns the UTC date
+			getUTCDay()						Same as getDay(), but returns the UTC day
+			getUTCFullYear()			Same as getFullYear(), but returns the UTC year
+			getUTCHours()					Same as getHours(), but returns the UTC hour
+			getUTCMilliseconds()	Same as getMilliseconds(), but returns the UTC milliseconds
+			getUTCMinutes()				Same as getMinutes(), but returns the UTC minutes
+			getUTCMonth()					Same as getMonth(), but returns the UTC month
+			getUTCSeconds()				Same as getSeconds(), but returns the UTC seconds -->
+
+		<!-- Complete JavaScript Date Reference -->
+</body>
+</html>
