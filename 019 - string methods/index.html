@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>String Methods</title>
+	</head>
+	<body>
+		<h2>JavaScript String Methods</h2>
+
+		<!-- <h2>JavaScript String Properties</h2> 
+
+		<p>The length property returns the length of a string:</p>
+
+		<p id="demo"></p>
+
+		<script>
+			var txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+			var sln = txt.length;
+			document.getElementById("demo").innerHTML = sln;
+		</script> -->
+
+		<!-- <h2>JavaScript String Methods</h2> 
+
+		<p>The indexOf() method returns the position of the first occurrence of a specified text:</p>
+
+		<p id="demo"></p> -->
+
+		<!-- Example 1 
+		<script>
+			var str = "Please locate where 'locate' occurs!";
+			var pos = str.indexOf("locate");
+			document.getElementById("demo").innerHTML = pos;
+		</script> -->
+
+		<!-- <h2>JavaScript String Methods</h2> -->
+
+		<!-- <p>The <strong>indexOf()</strong> method returns the position of the first occurrence of a specified text:</p> 
+		
+		<p id="demo"></p> -->
+
+		<!-- Example 1 -->
+		
+		<!-- <script> 
+			var str = "Please locate where 'locate' occurs!";
+			var pos = str.indexOf("locate");
+			document.getElementById("demo").innerHTML = pos;
+		</script> -->
+
+		<!-- Example 2 -->
+
+		<!-- <p>The lastIndexOf() method returns the position of the last occurrence of a specified text:</p>
+
+		<p id="demo"></p>
+
+		<script>
+			var str = "Please locate where 'locate' occurs!";
+			var pos = str.lastIndexOf("locate");
+			document.getElementById("demo").innerHTML = pos;
+		</script> -->
+
+		<!-- Example 3  -->
+
+		<!-- <p>Both indexOf(), and lastIndexOf() return -1 if the text is not found:</p> 
+
+		<p id="demo"></p>
+
+		<script>
+			var str = "Please locate where 'locate' occurs!";
+			var pos = str.indexOf("John");
+			document.getElementById("demo").innerHTML = pos;
+		</script>  -->
+
+		<!-- Example 4  -->
+
+		<!-- <p>The indexOf() method accepts a second parameter as the starting position for the search:</p> 
+
+		<p id="demo"></p>
+
+		<script>
+			var str = "Please locate where 'locate' occurs!";
+			var pos = str.indexOf("locate", 15);
+			document.getElementById("demo").innerHTML = pos;
+		</script> -->
+
+		<!-- <h2>JavaScript String Methods</h2> -->
+
+		<!-- <p>The lastIndexOf() method accepts a second parameter as the starting position for the search.</p> 
+
+		<p>Remember that the lastIndexOf() method searches backwards, so position 15 means start the search at position 15, and search to the beginning.</p>
+		<p>Position 15 is position 15 from the beginning.</p>
+		</p>
+
+		<p id="demo"></p>
+
+		<script>
+			var str = "Please locate where 'locate' occurs!";
+			var pos = str.lastIndexOf("locate", 15);
+			document.getElementById("demo").innerHTML = pos;
+		</script> -->
+
+		<!-- Searching for a String in a String -->
+
+		<!-- <h2>JavaScript String Methods</h2> 
+
+		<p>The search() method returns the position of the first occurrence of a specified text in a string:</p>
+		
+		<p id="demo"></p>
+
+		<script>
+			var string = "Please locate where 'locate' occurs!";
+			var pos = string.search("locate");
+			document.getElementById("demo").innerHTML = pos;
+		</script> -->
+
+		<!-- The slice() Method -->
+
+			<!-- <p>The slice() method extract a part of a string and returns the extracted parts in a new string:</p>
+
+	 <p id="demo"></p> -->
+
+		<!-- Example 1 -->
+
+		<!-- <script>  
+			var str = "Apple, Banana, Kiwi";
+			var res = str.slice(7, 13);
+			document.getElementById("demo").innerHTML = res;
+		</script> -->
+
+		<!-- Example 2 -->
+
+		<!-- <script>
+			var str = "Apple, Banana, Kiwi";
+			var res = str.slice(-12, -6);
+			document.getElementById("demo").innerHTML = res;
+		</script> -->
+	
+		<!-- Example 3 -->
+
+		<!-- <p id="demo"></p>
+
+		 <script>
+			var str = "Apple, Banana, Kiwi";
+			var res = str.slice(7);
+			document.getElementById("demo").innerHTML = res;
+		</script> -->
+
+		<!-- <script>
+			var str = "Apple, Banana, Kiwi";
+			var res = str.slice(-12)
+			document.getElementById("demo").innerHTML = res;
+		</script> -->
+
+		<!-- <script>
+			var str = "Apple, Banana, Kiwi";
+			var res = str.substring(7,13);
+			document.getElementById("demo").innerHTML = res;
+		</script> -->
+
+		<!-- <p>The substr() method extract a part of a string
+			and returns the extracted parts in a new string:</p>
+
+		<p id="demo"></p> -->
+
+		<!-- Example 1  -->
+		
+		<!-- <script>
+			var str = "Apple, Banana, Kiwi";
+			var res = str.substr(7,6);
+			document.getElementById("demo").innerHTML = res;
+		</script> -->
+
+		<!-- <script>
+			var str = "Apple, Banana, Kiwi";
+			var res = str.substr(7);
+			document.getElementById("demo").innerHTML = res;
+		</script> -->
+
+		<!-- <script>
+			var str = "Apple, Banana, Kiwi";
+			var res = str.substr(-4);
+			document.getElementById("demo").innerHTML = res;
+		</script> -->
+
+		<!-- Replacing String Content -->
+
+		<!-- Example 1 -->
+
+		<!-- <p>Replace "Microsoft" with "W3Schools" in the paragraph below:</p>
+
+		<button onclick="myFunction()">Try it</button>
+
+		<p id="demo">Please visit Microsoft!</p>
+
+		<script>
+			function myFunction() {
+				var str = document.getElementById("demo").innerHTML; 
+				var txt = str.replace("Microsoft", "W3Schools");
+				document.getElementById("demo").innerHTML = txt; 
+			}
+		</script> -->
+
+		<!-- Replacing String Content -->
+
+		<!-- Example 2 -->
+
+		<!-- <p>Try to replace "Microsoft" with "W3Schools" in the paragraph below:</p>
+
+		<button onclick="myFunction()">Try it</button>
+
+		<p id="demo">Please visit Microsoft!</p>
+
+		<script>
+			function myFunction() {
+				var str = document.getElementById("demo").innerHTML;
+				var txt = str.replace("MICROSOFT", W3Schools);
+
+				document.getElementById("demo").innerHTML = txt;
+			}
+		</script>
+
+		<p><strong>Note:</strong> Nothing will happen. By default, the replace() method is case sensitive. Writing MICROSOFT (with upper-case) will not work.</p> -->
+
+		<!-- Replacing String Content -->
+
+		<!-- Example 3 Regular Expression Flag /i ()-->
+
+		<!-- <p>Replace "Microsoft" with "W3Schools" in the paragraph below:</p>
+
+		<button onclick="myFunction()">Try it</button>
+
+		<p id="demo">Please visit Microsoft!</p>
+
+		<script>
+			function myFunction() {
+				var str = document.getElementById("demo").innerHTML;
+				var txt = str.replace(/MICROSOFT/i, "W3Schools");
+
+				document.getElementById("demo").innerHTML = txt;
+			}
+		</script> -->
+
+		<!-- Replacing String Content -->
+
+		<!-- Example 3 Regular Expression Flag /g (insensitive) -->
+
+		<!-- <p>Replace "Microsoft" with "W3Schools" in the paragraph below:</p>
+
+		<button onclick="myFunction()">Try it</button>
+
+		<p id="demo">Please visit Microsoft!</p>
+
+		<script>
+			function myFunction() {
+				var str = 
+				document.getElementById("demo").innerHTML; 
+				var txt = str.replace(/MICROSOFT/i, "W3Schools");
+
+				document.getElementById("demo").innerHTML = txt;
+			}
+		</script> -->
+
+		<!-- Converting to Upper and Lower Case -->
+		
+		<!-- Example UpperCase -->
+
+		<!-- <p>Convert string to upper case:</p>
+
+		<button onclick="myFunction()">Try it</button>
+
+		<p id="demo">Hello World!</p>
+
+		<script>
+			function myFunction() {
+				var text = document.getElementById("demo").innerHTML;
+
+				document.getElementById("demo").innerHTML = text.toUpperCase();
+			}
+		</script> -->
+
+		<!-- Converting to Upper and Lower Case -->
+
+		<!-- <p>Convert string to to lower</p>
+
+		<button onclick="myFunction()">Try it</button>
+
+		<p id="demo">Hello World!</p>
+
+		<script>
+			function myFunction() {
+				var text = 
+		document.getElementById("demo").innerHTML;
+
+		document.getElementById("demo").innerHTML = text.toLowerCase();
+		}
+		</script> -->
+
+		<!-- The concat() Method - Example 1 -->
+
+		<!-- <p>The <strong>concat()</strong> method joins two or more strings:</p>
+
+		<p id="demo"></p>
+
+		<script>
+			var text1 = 'Hello'
+			var text2 = 'World!'
+			var text3 = text1.concat(" ",text2);
+			document.getElementById("demo").innerHTML = text3;
+		</script> -->
+
+		<!-- String.trim() Example 1 -->
+
+		<!-- <h2>JavaScript String.trim()</h2>
+
+		<p>Click the button to alert the string with removed whitespace.</p>
+
+		<button onclick="myFunction()">Try it</button>
+
+		<p><strong>Note:</strong> The trim() method is not supported in Internet Explorer 8 and earlier versions.</p>
+
+		<script>
+			function myFunction() {
+				var str = "   Hello World!     ";
+				alert(str.trim());
+			}
+		</script> -->
+
+		<!-- String.trim() Example 2 -->
+
+		<!-- <h2>JavaScript String.trim()</h2>
+
+		<p>IE 8 does not support String.trim(). To trim a string you can use a regular expression instead.</p>
+
+		<script>
+		var str = "     Hello World!     ";
+		alert(str.replace(/^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g, ''));
+		</script> -->
+
+		<!-- String.trim() Example 2 -->
+
+		<!-- <h2>JavaScript String.trim()</h2>
+
+		<p>IE 8 does not support String.trim(). To trim a string you can use a polyfill.</p>
+
+		<script>
+			if (!String.prototype.trim) {
+				String.prototype.trim = function () {
+					return this.replace(/^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g,'');
+				};
+			}
+			var str = "     Hello World!        ";
+			alert(str.trim());
+		</script> -->
+
+		<!-- JavaScript String Padding - Example 1 -->
+
+		<!-- <p>The padStart() method pads a string with anoter string:</p>
+
+		<p id="demo"></p>
+
+		<script>
+			let str = "5";
+			str = str.padStart(4,0)
+			document.getElementById("demo").innerHTML = str;
+		</script> -->
+
+			<!-- JavaScript String Padding - Example 2 -->
+
+			<!-- <p>The padEnd() method pads a string with another string:</p>
+
+			<p id="demo"></p>
+
+			<script>
+				let str = "5";
+				str = str.padEnd(4,0);
+				document.getElementById("demo").innerHTML = str;
+			</script> -->
+
+			<!-- Extracting String Characters -->
+
+			<!-- The charAt() Method -->
+
+			<!-- <p>The charAt() method returns the returns the character at a given position in a string:</p>
+
+			<p id="demo"></p>
+
+			<script>
+				var str = "HELLO WORLD!";
+				document.getElementById("demo").innerHTML = str.charAt(0);
+			</script> -->
+
+			<!-- The charCodeAt() Method -->
+
+			<!-- <p>The charCodeAt() method returns the unicode of the character at a given position in a string:</p>
+			
+			<p id="demo"></p>
+
+			<script>
+				var str = "HELLO WORLD";
+				document.getElementById("demo").innerHTML = str.charCodeAt(0);
+			</script> -->
+
+			<!-- Property Access - Example 1 -->
+
+			<!-- <p>ECMAScript 5 allows property access on strings:</p>
+
+			<p id="demo"></p>
+
+			<script>
+				var str = "HELLO WORLD";
+				document.getElementById("demo").innerHTML = str[0];
+			</script> -->
+
+			<!-- Property Access - Example 2 -->
+
+			<!-- <p>ECMAScript 5 allows property acces on strings. But read only:</p>
+
+			<p id="demo"></p>
+
+			<script>
+				var str = "HELLO WORLD";
+				str[0] = "A"; // Does not work
+				document.getElementById("demo").innerHTML = str[0];
+			</script> -->
+
+		<!-- Converting a String to an Array -->
+
+		<!-- <p>Click "Try it" to display the first array element, after a string split.</p>
+
+		<button onclick="myFunction()">Try it</button>
+
+		<p id="demo"></p>
+
+		<script>
+			function myFunction() {
+				var str = "a,b,c,d,e,f";
+				var arr = str.split(",");
+				document.getElementById("demo").innerHTML = arr[0];
+			}
+		</script> -->
+
+		<!-- Example -->
+
+		<p id="demo"></p>
+
+		<script>
+			var str = "Hello";
+			var arr = str.split("");
+			var text = "";
+			var i;
+			for (i = 0; i < arr.length; i++) {
+				text += arr[i] + "<br>"
+			}
+			document.getElementById("demo").innerHTML = text;
+		</script>
+
+
+
+
+
+
+
+
+	
+	</body>
+</html>
