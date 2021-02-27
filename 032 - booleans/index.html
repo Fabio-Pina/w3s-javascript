@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>JavaScript Booleans</title>
+</head>
+<body>
+	<h1>JavaScript Booleans</h1>
+
+		<h2>Booleans Values</h2>
+
+		<!-- The Boolean() Function - Example 1 -->
+				
+			<!-- <p>Display the value of Boolean(10 > 9):</p>
+
+			<button onclick="myFunction()">Try it</button>
+
+			<p id="demo"></p>
+
+			<script>
+				function myFunction() {
+					document.getElementById("demo").innerText = Boolean(10 > 9);
+				}
+			</script> -->
+
+		<!-- The Boolean() Function - Example 2 -->
+
+			<!-- <p>Display the value of 10 > 9:</p>
+
+			<button onclick="myFunction()">Try it</button>
+
+			<p id="demo"></p>
+	
+			<script>
+				function myFunction() {
+
+					document.getElementById("demo").innerHTML = 10 > 9;
+				}
+			</script> -->
+
+		<!-- Comparisons and Conditions -->
+
+		<!-- Everything With a "Value" is True - Example 1 -->
+	
+			<!-- <p id="demo"></p>
+
+			<script>
+				var b1 = Boolean (100);
+				var b2 = Boolean (3.14);
+				var b3 = Boolean (-15);
+				var b4 = Boolean ("Hello");
+				var b5 = Boolean ('false');
+				var b6 = Boolean (1 + 7 + 3.14);
+
+				document.getElementById("demo").innerHTML = 
+				"100 is " + b1 + "<br>" +
+				"3.14 is " + b2 + "<br>" +
+				"-15 is " + b3 + "<br>" +
+				"Any (not empty) string is " + b4 + "<br>" +
+				"Even the string 'false' is" + b5 + "<br>" + 
+				"Any expression (except zero) is " + b6;
+			</script> -->
+
+		<!-- Everything With a "Value" is True - Example 2 -->
+
+			<!-- <p>Display the boolean value of -0:</p>
+
+			<button onclick="myFunction()">Try it</button>
+
+			<p id="demo"></p>
+
+			<script>
+				function myFunction() {
+					var x = -0;
+			
+					document.getElementById("demo").innerHTML = Boolean(x);
+				}
+			</script> -->
+
+		<!-- Everything With a "Value" is True - Example 3 -->
+
+			<!-- <p>Display the Boolean value of "":</p>
+
+			<button onclick="myFunction()">Try it</button>
+
+			<p id="demo"></p>
+
+			<script>
+				function myFunction() {
+					var x = "";
+
+					document.getElementById("demo").innerHTML = Boolean(x);
+				}
+			</script> -->
+
+		<!-- Everything With a "Value" is True - Example 4 -->
+
+			<!-- <p>Display the Boolean value of undefined:</p>
+
+			<button onclick="myFunction()">Try it</button>
+
+			<p id="demo"></p>
+
+			<script>
+				function myFunction() {
+					var x;
+
+					document.getElementById("demo").innerHTML = Boolean(x);
+				}
+			</script> -->
+
+		<!-- Everything With a "Value" is True - Example 5 -->
+
+			<!-- <p>Display the Boolean value of null:</p>
+
+			<button onclick="myFunction()">Try it</button>
+
+			<p id="demo"></p>
+
+			<script>
+				function myFunction() {
+					var x = null;
+
+					document.getElementById("demo").innerHTML = Boolean(x);
+				}
+			</script> -->
+
+		<!-- Everything With a "Value" is True - Example 6 -->
+
+			<!-- <p>Display the boolean value of false:</p>
+
+			<button onclick="myFunction()">Try it</button>
+
+			<p id="demo"></p>
+
+			<script>
+				function myFunction() {
+					var x = false;
+
+					document.getElementById("demo").innerHTML = Boolean(x);
+				}
+			</script> -->
+
+		<!-- Everything With a "Value" is True - Example 7 -->
+
+			<!-- <p>Display the Boolean value of NaN:</p>
+
+			<button onclick="myFunction()">Try it</button>
+
+			<p id="demo"></p>
+
+			<script>
+				function myFunction() {
+					var x = 10 / H;
+
+					document.getElementById("demo").innerHTML = Boolean(x);
+				}
+			</script> -->
+
+		<!-- Booleans Can be Objects -->
+
+			<!-- <p>Never create booleans as objects.</p>
+			<p>Booleans and objects cannot be safely compared.</p>
+
+			<p id="demo"></p>
+
+			<script>
+				var x = false  // x is a boolean
+				var y = new Boolean(false); // y is an object
+
+				document.getElementById("demo").innerHTML = typeof x + "<br>" + typeof y
+			</script> -->
+
+		<!-- Booleans Can be Objects -->
+
+			<!-- <p>Never create booleans as objects.</p>
+			<p>Booleans and objects cannot be safely compared.</p>
+
+			<p id="demo"></p>
+
+			<script>
+				var x = false // x is a boolean
+				var y = new Boolean(false); // y is an object
+				document.getElementById("demo").innerHTML = (x==y)
+			</script> -->
+
+		<!-- Booleans Can be Objects -->
+
+			<!-- <p>Never create booleans as objects.</p>
+			<p>Booleans and objects cannot be safely compared.</p>
+
+			<p id="demo"></p>
+
+			<script>
+				var x = false;  // x is a number
+				var y = new Boolean(false); // y is an object
+				document.getElementById("demo").innerHTML = (x===y);
+			</script> -->
+
+		<!-- Booleans Can be Objects -->
+
+			<!-- <p>Never create booleans as objects.</p>
+			<p>Booleans and objects cannot be safely compared.</p>
+
+			<p id="demo"></p>
+
+			<script>
+				var x = new Boolean(false); // x is an object
+				var y = new Boolean(false); // y is an object
+				document.getElementById("demo").innerHTML = (x==y);
+			</script> -->
+
+		<!-- Complete Boolean Reference -->
+
+</body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>JavaScript Switch Statement</title>
+</head>
+<body>
+			<h1>JavaScript Switch Statement</h1>
+
+			<h2>The JavaScript Switch Statement</h2>
+
+			<!-- <h2>Syntax</h2>
+
+				<script>
+					switch (exepressions) {
+					case x:
+						// code block
+						break;
+					case y:
+						// code block
+						break;
+					default:
+				}	
+				</script> -->
+
+			<!-- <h2>The JavaScript Switch Statement</h2>
+
+				<p id="demo"></p>
+
+				<script>
+					var day;
+					switch (new Date().getDay()) {
+						case 0:
+							day = "Sunday"
+							break; 
+						case 1:
+							day = "Monday";
+							break;
+						case 2:
+							day = "Tuesday";
+							break;
+						case 3:
+							day = "Wednesday";
+							break;
+						case 4:
+							day = "Thursday";
+							break;
+						case 5:
+							day = "Friday";
+							break;
+						case 6:
+							day = "Saturday";
+					}
+					document.getElementById("demo").innerHTML = "Today is " + day;
+				</script> -->
+
+			<!-- <h2>The Break Keyword</h2> -->
+
+			<!-- <h2>The default Keyword - Example 1 </h2> -->
+
+				<!-- <p id="demo"></p>
+
+				<script>
+					var text;
+					switch (new Date().getDay()) {
+						case 6:
+							text = "Today is Saturday";
+							break;
+						case 0: 
+							text = "Today is Sunday";
+							break;
+						default:
+							text = "Looking forward to the Weekend";
+						}
+						document.getElementById("demo").innerHTML = text;
+				</script> -->
+
+			<!-- <h2>The default Keyword - Example 2 </h2> -->
+
+				<!-- <p id="demo"></p>
+
+				<script>
+					var text;
+					switch (new Date().getDay()) {
+						default:
+							text = "Looking forward to the Weekend";
+							break;
+						case 6:
+							text = "Today is Saturday"
+							break;
+						case 0:
+							text = "Today is Sunday";
+					}
+					document.getElementById("demo").innerHTML = text;
+				</script> -->
+
+			<!-- <h2>The default Keyword - Example 3 </h2> -->
+
+				<!-- <p id="demo"></p>
+
+				<script>
+					var text;
+					switch (new Date().getDay()) {
+						default:
+							text = "Looking forward to the Weekend";
+							break;
+						case 6:
+							text = "Today is Saturday";
+						break;
+						case 0:
+							text = "Today is Sunday";
+					}
+					document.getElementById("demo").innerHTML = text;
+				</script> -->
+
+			<!-- <h2>Common Code Blocks</h2>	
+
+				<p id="demo"></p>
+
+				<script>
+					var text;
+					switch (new Date().getDay()) {
+						case 4:
+						case 5:
+							text = "Soon it is Weekend";
+							break;
+						case 0:
+						case 6:
+							text = "It is Weekend";
+							break;
+						default:
+							text = "Looking forward to the Weekend";
+					}	
+					document.getElementById("demo").innerHTML = text;
+				</script> -->
+
+			<!-- <h2>Switching Details</h2> -->
+
+			<h2>Strict Comparison</h2>
+
+				<p id="demo"></p>
+
+				<script>
+					var x = "0";
+
+					switch (x) {
+						case 0:
+							text = "Off";
+							break;
+						case 1:
+							text = "On";
+							break;
+							default:
+								text = "No value found";
+					}
+					document.getElementById("demo").innerHTML = text;
+				</script>
+
+
+
+
+
+			
+
+
+
+				
+				
+			
+
+
+</body>
+</html>
