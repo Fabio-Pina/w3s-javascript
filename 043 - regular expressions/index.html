@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>JavaScript Regular Expressions</title>
+</head>
+<body>
+			<h1>JavaScript Regular Expressions</h1>
+
+			<!-- <h2>What is a Regular Expressions</h2> -->
+
+			<!-- <h2>Syntax</h2> -->
+
+			<!-- <h2>Using String Methods</h2> -->
+
+			<!-- <h2>Using String search() With a String</h2> -->
+
+				<!-- <p>Search a string for "W3Schools", and display the position of the match:</p>
+
+				<p id="demo"></p>
+
+				<script>
+					var str = "Visit W3Schools!";
+					var n = str.search("W3Schools");
+					document.getElementById("demo").innerHTML = n;
+				</script> -->
+
+			<!-- <h2>Using String search() With a Regular Expression</h2> -->
+
+				<!-- <p>Search a string for "w3Schools", and display the position of the match:</p>
+
+				<p id="demo"></p>
+
+				<script>
+					var str = "Visit W3Schools!";
+					var n = str.search(/w3Schools/i);
+					document.getElementById("demo").innerHTML = n;
+				</script> -->
+
+			<!-- <h2>Using String replace()With a String</h2> -->
+
+				<!-- <p>Replace "Microsoft" with "W3Schools" in the paragraph below:</p>
+
+				<button onclick="myFunction()">Try it</button>
+
+				<p id="demo">Please visit Microsoft!</p>
+
+				<script>
+					function myFunction() {
+						var str = 
+						document.getElementById("demo").innerHTML;
+						var txt = str.replace("Microsoft", "W3Schools");
+
+						document.getElementById("demo").innerHTML = txt;
+					}
+				</script> -->
+
+			<!-- <h2>Use String replace() With a Regular Expression</h2> -->
+
+				<!-- <p>Replace "microsoft" with "W3Schools" in the paragraph below:</p>
+
+				<button onclick="myFunction()">Try it</button>
+
+				<p id="demo">Please visit Microsoft and Microsoft!</p>
+
+				<script>
+				function myFunction() {
+					var str = document.getElementById("demo").innerHTML; 
+					var txt = str.replace(/microsoft/i,"W3Schools");
+					document.getElementById("demo").innerHTML = txt;
+				}
+				</script> -->
+
+			<!-- <h2>Did you Notice?</h2> -->
+
+			<!-- <h2>Regular Expression Modifiers - Example 1</h2> -->
+
+				<!-- <p>Click the button to do a case-insensitive search for "w3schools" in a string.</p>
+
+				<button onclick="myFunction()">Try it</button>
+
+				<p id="demo"></p>
+
+				<script>
+					function myFunction() {
+						var str = "Visit W3Schools";
+						var patt1 = /w3Schools/i;
+						var result = str.match(patt1);
+
+						document.getElementById("demo").innerHTML = result;
+					}
+				</script> -->
+
+			<!-- <h2>Regular Expression Modifiers - Example 2</h2> -->
+
+				<!-- <p>Click the button to do a global search for "is" in a string.</p>
+
+				<button onclick="myFunction()">Try it</button>
+
+				<p id="demo"></p>
+
+				<script>
+					function myFunction() {
+						var str = "Is this all there is?";
+						var patt1 = /is/g;
+						var result = str.match(patt1);
+					
+						document.getElementById("demo").innerHTML = result;
+					}
+				</script> -->
+
+			<!-- <h2>Regular Expression Modifiers - Example 3</h2> -->
+				
+				<!-- <p>Click the button to do a multiline search for "is" at the beginning of each line in a string.</p>
+
+				<button onclick="myFunction()">Try it</button>
+
+				<p id="demo"></p>
+
+				<script>
+					function myFunction() {
+						var str = "\nIs th\nis it?";
+						var patt1 = /^is/m;
+						var result = str.match(patt1);
+
+						document.getElementById("demo").innerHTML = result;
+					}
+				</script> -->
+
+			<!-- <h2>Regular Expression Patterns - Example 1</h2> -->
+
+				<!-- <p>Click the button to do a global search for the character "h" in a string.</p>
+
+				<button onclick="myFunction()">Try it</button>
+
+				<p id="demo"></p>
+
+				<script>
+					function myFunction() {
+						var str = "Is this all there is?";
+						var patt1 = /[h]/g;
+						var result = str.match(patt1);
+
+						document.getElementById("demo").innerHTML = result;
+					}
+				</script> -->
+
+			<!-- <h2>Regular Expression Patterns - Example 2</h2> -->
+				
+				<!-- <p>Click the button to do a global search for the numbers 1 to 4 in a string.</p>
+				
+				<button onclick="myFunction()">Try it</button>
+
+				<p id="demo"></p>
+
+				<script>
+					function myFunction() {
+						var str = "123456789"
+						var patt1 = /[1-4]/g
+						var result = str.match(patt1)
+
+						document.getElementById("demo").innerHTML = result;
+					}
+				</script> -->
+
+			<!-- <h2>Regular Expression Patterns - Example 3</h2> -->
+
+				<!-- <p>Click the button to do a global search for any of the specified alternatives (red|green).</p>
+
+				<button onclick="myFunction()">Try it</button>
+
+				<p id="demo"></p>
+
+				<script>
+					function myFunction() {
+						var str = "re, green, red, green, gren, gr, blue, yellow";
+						var patt1 = /(red|green)/g;
+						var result = str.match(patt1)
+
+						document.getElementById("demo").innerHTML = result;
+					}
+				</script> -->
+		
+			<!-- <h2>Regular Expression Patterns - Metacharacters - Example 1</h2> -->
+
+				<!-- <p>Click the button to do a global search for digits in a string.</p>
+
+				<button onclick="myFunction()">Try it</button>
+
+				<p id="demo"></p>
+
+				<script>
+					function myFunction() {
+						var str = "Give 100%!";
+						var patt1 = /\d/g;
+						var result = str.match(patt1);
+
+						document.getElementById("demo").innerHTML = result;
+					}
+				</script> -->
+
+			<!-- <h2>Regular Expression Patterns - Metacharacters - Example 2</h2> -->
+
+				<!-- <p>Click the button to do a global search for <b>whitespace</b> characters in a string.</p>
+
+				<button onclick="myFunction()">Try it</button>
+
+				<p id="demo"></p>
+
+				<script>
+					function myFunction() {
+						var str = "Ins this all there is?";
+						var patt1 = /\s/g;
+						var result = str.match(patt1);
+
+						document.getElementById("demo").innerHTML = result;
+					}
+				</script> -->
+
+			<!-- <h2>Regular Expression Patterns - Metacharacters - Example 3</h2> -->
+
+			<!-- <p>Search for the characters<br>"LO"<br>in the <strong>beginning</strong> of a word in the phrase:<br>"HELLO, LOOK AT YOU!"</p>
+
+			<p>Found in position: <span id="demo"></span></p>
+
+			<script>
+				var str = "HELLO, LOOK AT YOU!";
+				var patt1 = /\bLO/;
+				var result = str.search(patt1);
+				document.getElementById("demo").innerHTML = result;
+			</script> -->
+
+			<!-- <h2>Regular Expression Patterns - Metacharacters - Example 4</h2> -->
+
+				<!-- <p>
+					Search for the characters<br>
+					"LO"
+					<br>in the <strong>end</strong> of a word in the phrase:<br>
+					"HELLO, LOOK AT YOU!"
+				</p>
+
+				<p>Found in position: <span id="demo"></span></p>
+
+				<script>
+					var str = "HELLO, LOOK AT YOU!";
+					var patt1 = /LO\b/;
+					var result = str.search(patt1);
+					document.getElementById("demo").innerHTML = result;
+				</script> -->
+
+			<!-- <h2>Regular Expression Patterns - Metacharacters - Example 5</h2> -->
+
+				<!-- <p>Click the button to do a global search for the hexadecimal number 0057 (W) in a string.</p>
+
+				<button onclick="myFunction()">Try it</button>
+
+				<p id="demo"></p>
+
+				<script>
+					function myFunction() {
+						var str = "Visit W3Schools.Hello World!";
+						var patt1 = /\u0057/g;
+						var result = str.match(patt1);
+				
+					document.getElementById("demo").innerHTML = result;
+					}
+				</script> -->
+
+			<!-- <h2>Regular Expression Patterns - Quantifiers - Example 1</h2> -->
+
+				<!-- <p>Click the button do to a global search for at least one "o" in a string.</p>
+
+				<button onclick="myFunction()">Try it</button>
+
+				<p id="demo"></p>
+
+				<script>
+					function myFunction() {
+						var str = "Hellooo World! Hello W3Schools!";
+						var patt1 = /o+/g;
+						var result = str.match(patt1);
+
+						document.getElementById("demo").innerHTML = result;
+					}
+				</script> -->
+
+			<!-- <h2>Regular Expression Patterns - Quantifiers - Example 2</h2> -->
+
+				<!-- <p>Click the button to do a global search for an "l", followed by zero or more "o" characters.</p>
+
+				<button onclick="myFunction()">Try it</button>
+
+				<p id="demo"></p>
+
+				<script>
+					function myFunction() {
+						var str = "Hello World! Hello W3Schools!"
+						var patt1 = /lo*/g;
+						var result = str.match(patt1);
+
+						document.getElementById("demo").innerHTML = result;
+					}
+				</script> -->
+
+			<!-- <h2>Regular Expression Patterns - Quantifiers - Example 3</h2> -->
+
+				<!-- <p>Click the button to do a global search for a "1", followed by zero or one "0" characters.</p>
+
+				<button onclick="myFunction()">Try it</button>
+
+				<p id="demo"></p>
+
+				<script>
+					function myFunction() {
+						var str = "1, 100 or 1000?";
+						var patt1 = /10?/g;
+						var result = str.match(patt1);
+
+						document.getElementById("demo").innerHTML = result;
+					}
+				</script> -->
+
+			<!-- <h2>Using the RegExp Object</h2> -->
+
+			<!-- <h2>Using test()</h2> -->
+
+				<!-- <p>Search for an "e" in the next paragraph:</p>
+
+				<p id="p01">The best things in life are free.</p>
+
+				<p id="demo"></p>
+
+				<script>
+					text = 
+					document.getElementById("p01").innerHTML;
+					document.getElementById("demo").innerHTML = /e/.test(text);
+				</script> -->
+	
+			<h2>Using exec()</h2>
+
+				<p id="demo"></p>
+
+				<script>
+					var obj = /e/.exec("The best this is life are free!");
+					document.getElementById("demo").innerHTML = "Found " + obj[0] + " in position " + obj.index + " in the text: " + obj.input; 
+				</script>
+
+			<h2>Referência RegExp completa
+				Para uma referência completa, vá para nossa Referência Completa do JavaScript RegExp .
+				
+				A referência contém descrições e exemplos de todas as propriedades e métodos RegExp.</h2>
+
+
+
+
+
+</body>
+</html>

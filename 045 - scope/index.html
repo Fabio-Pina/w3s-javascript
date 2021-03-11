@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>JavaScript Scope</title>
+</head>
+<body>
+			<h1>JavaScript Scope</h1>
+
+			<!-- <h2>JavaScript Function Scope</h2> -->
+
+			<!-- <h2>Local JavaScript Variables</h2> -->
+
+				<!-- <p>Outside myFunction() carName is undefined.</p>
+
+				<p id="demo1"></p>
+
+				<p id="demo2"></p>
+
+				<script>
+					myFunction();
+
+					function myFunction() {
+						var carName = "Volvo";
+
+						document.getElementById("demo1").innerHTML = typeof carName + " " + carName;
+					}
+					document.getElementById("demo2").innerHTML = typeof carName;
+				</script> -->
+
+			<!-- <h2>Global JavaScript Variables</h2> -->
+
+				<!-- <p>A GLOBAL variable can be accessed from any script or function.</p>
+
+				<p id="demo"></p>
+
+				<script>
+					var carName = "Volvo";
+					myFunction();
+
+					function myFunction() {
+						document.getElementById("demo").innerHTML = "I can display " + carName;
+					}
+				</script> -->
+
+			<!-- <h2>JavaScript Variables</h2> -->
+
+			<!-- <h2>Automatically Global</h2>	 -->
+
+				<!-- <p>If you assign a value to a variable that has not been declared, it will automatically become a GLOBAL variable:</p>
+
+				<p id="demo"></p>
+
+				<script>
+					myFunction();
+					// code here can use carName as a global variable
+					document.getElementById("demo").innerHTML = "I can display " + carName;
+					function myFunction() {
+						carName = "Volvo";
+					}
+				</script> -->
+
+			<!-- <h2>Strict Mode</h2> -->
+
+			<!-- <h2>Global Variables in HTML</h2> -->
+
+				<!-- <p>In HTML, global variables defined with <b>var</b>, will become window variables.</p>
+
+				<p id="demo"></p>
+
+				<script>
+					var carName = "Volvo";
+					
+					// code here can use window.carName
+					document.getElementById("demo").innerHTML = "I can display " + window.carName;
+				</script> -->
+
+			<h2>Warning</h2>
+
+			<h2>The Lifetime of JavaScript Variables</h2>
+
+			<h2>Function Arguments</h2>
+
+
+
+
+
+
+</body>
+</html>

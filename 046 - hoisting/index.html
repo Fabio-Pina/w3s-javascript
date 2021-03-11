@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>JavaScript Hoisting</title>
+</head>
+<body>
+			<h1>JavaScript Hoisting</h1>
+
+			<!-- <h2>JavaScript Declarations are Hoisted - Example 1</h2> -->
+
+				<!-- <p id="demo"></p>
+
+				<script>
+					x = 5; // Assing 5 to x
+
+					elem = document.getElementById("demo");
+					// Find an element
+					elem.innerHTML = x;
+					// Display x in the element
+
+					var x; // Declare x
+				</script> -->
+			
+			<!-- <h2>JavaScript Declarations are Hoisted - Example 2</h2> -->
+
+				<!-- <p id="demo"></p>
+
+				<script>
+					var x; // Declare x
+					x = 5; // Assign 5 to x
+
+					elem = document.getElementById("demo");
+					// Find an element
+					elem.innerHTML = x;
+					// Display x in the element
+				</script> -->
+
+			<!-- <h2>The let and const Keywords - Example 1</h2> -->
+
+				<!-- <p>With <b>let</b>, you cannot use a variable before it is declared:</p>
+
+				<p id="demo"></p>
+
+				<script>
+					try {
+						carName = "Volvo";
+						let carName;
+
+						document.getElementById("demo").innerHTML = carName;
+					}
+					catch (err) {
+
+						document.getElementById("demo").innerHTML = err.name + ": " + err.message;
+					}
+				</script> -->
+
+			<!-- <h2>The let and const Keywords - Example 2</h2> -->
+
+				<!-- <p>With <b>const</b>, you cannot use a variable before it is declared.</p>
+				<p>Try to remove the //.</p>
+
+				<p id="demo"></p>
+
+				<script>
+					carName = "Volvo";
+					// const carName;
+					document.getElementById("demo").innerHTML = carName;
+				</script> -->
+
+			<!-- <h2>JavaScript Initializations are Not Hoisted - Example 1</h2> -->
+
+				<!-- <p id="demo"></p>
+
+				<script>
+					var x = 5; // Initialize x
+					var y = 7; // Initialize y
+
+					elem = document.getElementById("demo");
+					// Find an element
+					elem.innerHTML = x + " " + y;
+					// Display x and y
+				</script> -->
+
+			<!-- <h2>JavaScript Initializations are Not Hoisted - Example 2</h2> -->
+
+				<!-- <p id="demo"></p>
+
+				<script>
+					var x = 5; // Initialize x
+
+					elem = document.getElementById("demo");
+					// Find an element
+					elem.innerHTML = "x is" + x + " and y is " + y; // Display x and y
+
+					var y = 7; // Initialize y
+				</script> -->
+
+			<h2>JavaScript Initializations are Not Hoisted - Example 3</h2>
+
+				<p id="demo"></p>
+
+				<script>
+					var x = 5; // Initialize x
+					var y; // Declare y
+
+					elem = document.getElementById("demo");
+					// Find an element
+					elem.innerHTML = x + " " + y;
+					// Display x and y
+					y = 7; // Assign 7 to y
+				</script>
+
+			<h2>Declare Your Variables At the Top !</h2>
+
+				
+
+				
+
+
+
+
+</body>
+</html>

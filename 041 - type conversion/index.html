@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>JavaScript Type Conversion</title>
+</head>
+<body>
+		<h1>JavaScript Type Conversion</h1>
+
+			<!-- <h2>JavaScript Data Types</h2> -->
+			
+			<!-- <h2>The Type Operator</h2> -->
+
+				<!-- <p>The typeof operator returns the type of a variable, object, function or expression.</p>
+
+				<p id="demo"></p>
+
+				<script>
+					document.getElementById("demo").innerHTML =
+					typeof "john"    			+ "<br>" +
+					typeof 3.14      			+ "<br>" +
+					typeof NaN       			+ "<br>" +
+					typeof false     			+ "<br>" +
+					typeof [1,2,3,4]     	+ "<br>" +
+					typeof {name: 'john', age:34}  +
+					typeof new Date() + "<br>"     +
+					typeof function() {} + "<br>"  +
+					typeof function () {} + "<br>" +
+					typeof null;
+				</script> -->
+
+			<!-- <h2>The Data Type of typeof</h2> -->
+
+			<!-- <h2>The constructor Property - Example 1</h2> -->
+
+				<!-- <p>The constructor property returns the constructor function for a variable or an 
+				object.</p>
+
+				<p id="demo"></p>
+
+				<script>
+					document.getElementById("demo").innerHTML =
+							"john".constructor + "<br>" +
+							(3.14).constructor + "<br>" +
+							false.constructor  + "<br>" +
+							[1,2,3,4,5,6,7,8,9].constructor + "<br>" +
+
+							{name:'john',
+						age: 34}.constructor + "<br>" + new Date().constructor + "<br>" +
+						function () {}.constructor;
+				</script> -->
+
+			<!-- <h2>The constructor Property - Example 2</h2> -->
+
+				<!-- <p>This "home made" isArray() function returns true when used on an array:</p>
+
+				<p id="demo"></p>
+		
+				<script>
+					var fruits = ["Banana", "Orange", "Apple", "Mango"];
+					document.getElementById("demo").innerHTML = isArray(fruits);
+
+					function isArray(myArray) {
+						return
+					myArray.constructor.toString().indexOf("Array") > -1;
+					}
+				</script> -->
+
+			<!-- <h2>The constructor Property - Example 3</h2> -->
+
+				<!-- <p>This "home made" isArray() function returns true when used on an array:</p>
+
+				<p id="demo"></p>
+
+				<script>
+					var fruits = ["Banana", "Orange", "Apple", "Mango"];
+					document.getElementById("demo").innerHTML = isArray(fruits);
+
+					function isArray(myArray) {
+						return myArray.constructor === Array;
+					}
+				</script> -->
+
+			<!-- <h2>The constructor Property - Example 4</h2> -->
+
+				<!-- <p>This "home made" isDate() function returns true when used on an date:</p>
+
+				<p id="demo"></p>
+
+				<script>
+					var myDate = new Date();
+					document.getElementById("demo").innerHTML = isDate(myDate);
+
+					function isDate(myDate) {
+						return myDate.constructor.toString().indexOf("Date") > -1;
+					}
+				</script> -->
+
+			<!-- <h2>The constructor Property - Example 5</h2> -->
+
+				<!-- <p>This "home made" isDate() function returns true when used on an date:</p>
+
+				<p id="demo"></p>
+
+				<script>
+					var myDate = new Date();
+					document.getElementById("demo").innerHTML = isDate(myDate);
+
+					function isDate(myDate) {
+						return myDate.constructor === Date;
+					}
+				</script> -->
+
+			<!-- <h2>JavaScript Type Conversion</h2> -->
+				
+			<!-- <h2>Converting Numbers to Strings - Example 1</h2> -->
+
+				<!-- <p>The String() method can convert a number to a string.</p>
+
+				<p id="demo"></p>
+
+				<script>
+					var x = 123;
+					document.getElementById("demo").innerHTML =
+					String(x) + "<br>" +
+					String(123) + "<br>" +
+					String(100 + 23);
+				</script> -->
+
+			<!-- <h2>Converting Numbers to Strings - Example 2</h2> -->
+
+				<!-- <p>The toString method converts a number to a string.</p>
+
+				<p id="demo"></p>
+
+				<script>
+					var x = 123;
+					document.getElementById("demo").innerHTML =
+						x.toString() + "<br>" +
+						(123).toString() + "<br>" +
+						(100 + 23).toString();
+				</script> -->
+
+			<!-- <h2>Converting Booleans to Strings</h2> -->
+
+				<!-- <script>
+					String(false) // returns "false"
+					String(true) // returns "true"
+				</script>
+
+				<script>
+					false.toString() // returns "false"
+					true.toString() // returns "true"
+				</script>
+			-->
+
+			<!-- <h2>Converting Dates to Strings</h2> -->
+
+			<!-- <script>
+				String(Date()) // returns "Thu Jul 17 2014 15:38:19 GMT+0200 (W. Europe Daylight Time)"
+			</script>
+
+			<script>
+				Date().toString() // // returns "Thu Jul 17 2014 15:38:19 GMT+0200 (W. Europe Daylight Time)"
+			</script> -->
+
+			<!-- <h2>Converting Strings to Numbers</h2> -->
+
+				<!-- <script>
+					Number("3.14") // returns "3.14"
+					Number(" ") // returns 0
+					Number("99 88") // returns NaN
+				</script> -->
+
+			<!-- <h2>The Unary + Operator - Example 1</h2> </h2> -->
+			
+				<!-- <p>The typeof operator returns the type of a variable or expression.</p>
+
+				<button onclick="myFunction()">Try it</button>
+
+				<p id="demo"></p>
+
+				<script>
+					function myFunction() {
+						var y = "5";
+						var x = + y;
+
+					document.getElementById("demo").innerHTML = typeof y + "<br>" + typeof x;
+					}
+				</script> -->
+
+			<!-- <h2>The Unary + Operator - Example 2</h2> -->
+
+				<!-- <p>The typeof operator returns the type of a variable or expression.</p>
+
+				<button onclick="myFunction()">Try it</button>
+
+				<p id="demo"></p>
+
+				<script>
+					function myFunction() {
+						var y = "John";
+						var x = + y;
+
+					document.getElementById("demo").innerHTML = typeof y + "<br>" + typeof x;
+				}
+				</script> -->
+
+			<!-- <h2>Converting Booleans to Numbers</h2> -->
+
+				<!-- <script>
+					Number(false) // returns 0
+					Number(true)  // returns 1
+				</script>
+
+			<h2>Converting Dates to Numbers</h2>
+
+				<script>
+					d = new Date();
+					Number(d) // returns 1404568027739
+				</script> -->
+
+				<!-- <script>
+					d = new Date();
+					d.getTime() // returns 1404568027739
+				</script> -->
+
+			<!-- <h2>Automatic Type Conversion</h2> -->
+
+				<!-- <p id="demo"></p>
+
+				<script>
+					var x = [];
+					document.getElementById("demo").innerHTML =
+					(5 + null)   + "<br>" +
+					("5" + null) + "<br>" +
+					("5" + 2)    + "<br>" +
+					("5" - 2)    + "<br>" +
+					("5" * "2")  + "<br>" +
+					("5" / "2")  + "<br>"
+				</script> -->
+
+			<!-- <h2>Automatic String Conversion</h2> -->
+
+				<!-- <script>
+					document.getElementById("demo").innerHTML = myVar;
+
+					// if myVar = {name:"Fjohn"}  // toString converts to "[object Object]"
+					// if myVar = [1,2,3,4]       // toString converts to "1,2,3,4"
+					// if myVar = new Date()      // toString converts to "Fri Jul 18 2014 09:08:55 GMT+0200"
+				</script>
+
+				<script>
+					// if myVar = 123             // toString converts to "123"
+					// if myVar = true            // toString converts to "true"
+					// if myVar = false           // toString converts to "false"
+				</script> -->
+
+			<!-- <h2>JavaScript Type Conversion Table - Example 1</h2> -->
+
+				<!-- <p>Converting false to other types:</p>
+
+				<p id="demo" style="font-family:courier;"></p>
+
+				<script>
+					var x = false;
+					document.getElementById("demo").innerHTML =
+					"Number : " + Number(x) + "<br>" + 
+					"String : " + String(x) + "<br>" + 
+					"Boolean: " + Boolean(x);
+				</script> -->
+
+			<!-- <h2>JavaScript Type Conversion Table - Example 2</h2> -->
+
+				<!-- <p>Converting true to other types:</p>
+
+				<p id="demo" style="font-family:courier"></p>
+
+				<script>
+					var x = true;
+					document.getElementById("demo").innerHTML =
+					"Number  : " + Number (x) + "<br>" +
+					"String  : " + String (x) + "<br>" +
+					"Boolean : " + Boolean(x);
+				</script> -->
+
+			<!-- <h2>JavaScript Type Conversion Table - Example 3</h2> -->
+
+				<!-- <p>Converting the number 0 to other types</p>
+
+				<p id="demo" style="font-family:courier;"></p>
+
+				<script>
+					var x = 0;
+					document.getElementById("demo").innerHTML = 
+					"Number: " + Number(x) + "<br>" +
+					"String : " + String(x) + "<br>" +
+					"Boolean : " + Boolean(x);
+				</script> -->
+
+			<!-- <h2>JavaScript Type Conversion Table - Example 4</h2> -->
+
+				<!-- <p>Converting the number 1 to other types:</p>
+
+				<p id="demo" style="font-family:courier;"></p>
+
+				<script>
+					var x = 1;
+					document.getElementById("demo").innerHTML =
+					"Number  :  " + Number (x) + "<br>" +
+					"String  :  " + String (x) + "<br>" +
+					"Boolean :  " + Boolean(x);
+				</script> -->
+
+			<!-- <h2>JavaScript Type Conversion Table - Example 5</h2> -->
+
+				<!-- <p>Converting the string "0" to other types:</p>
+
+				<p id="demo" style="font-family:courier"></p>
+
+				<script>
+					var x = "0";
+					document.getElementById("demo").innerHTML =
+					"Number  : " + Number (x) + "<br>" +
+					"String  : " + String (x) + "<br>" +
+					"Boolean : " + Boolean(x);
+				</script> -->
+
+			<!-- <h2>JavaScript Type Conversion Table - Example 6</h2> -->
+
+				<!-- <p>Converting the string "000" to other types:</p>
+
+				<p id="demo" style="font-family:courier"></p>
+
+				<script>
+					var x = "000";
+					document.getElementById("demo").innerHTML = 
+					"Number  : " + Number (x) + "<br>" +
+					"String  : " + String (x) + "<br>" +
+					"Boolean : " + Boolean(x);
+				</script> -->
+
+			<!-- <h2>JavaScript Type Conversion Table - Example 7</h2> -->
+
+				<!-- <p>Converting the string "1" to other types:</p>
+
+				<p id="demo" style="font-family:courier"></p>
+
+				<script>
+					var x = 1;
+					document.getElementById("demo").innerHTML =
+					"Number  : " + Number(x) + "<br>" +
+					"String  : " + String(x) + "<br>" +
+					"Boolean : " + Boolean(x);
+				</script> -->
+
+			<!-- <h2>JavaScript Type Conversion Table - Example 8</h2> -->
+
+				<!-- <p>Converting NaN to other types:</p>
+
+				<p id="demo" style="font-family:courier"></p>
+
+				<script>
+					var x = NaN;
+					document.getElementById("demo").innerHTML =
+					"Number  : " + Number(x) + "<br>" +
+					"String  : " + String(x) + "<br>" +
+					"Boolean : " + Boolean(x);
+				</script> -->
+
+			<!-- <h2>JavaScript Type Conversion Table - Example 9</h2> -->
+
+				<!-- <p>Converting Infinity to other types:</p>
+
+				<p id="demo" style="font-family:courier"></p>
+
+				<script>
+					var x = Infinity;
+					document.getElementById("demo").innerHTML =
+					"Number  : " + Number(x) + "<br>" +
+					"String  : " + String(x) + "<br>" +
+					"Boolean : " + Boolean(x);
+				</script> -->
+
+			<!-- <h2>JavaScript Type Conversion Table - Example 10</h2> -->
+
+				<!-- <p>Converting -Infinity to other types:</p>
+
+				<p id="demo" style="font-family:courier"></p>
+
+				<script>
+					var x = -Infinity;
+					document.getElementById("demo").innerHTML =
+					"Number : " + Number(x) + "<br>" +
+					"String : " + String(x) + "<br>" +
+					"Boolean : " + Boolean(x);
+				</script> -->
+
+			<!-- <h2>JavaScript Type Conversion Table - Example 11</h2> -->
+
+				<!-- <p>Converting an empty string to other types:</p>
+
+				<p id="demo" style="font-family:courier"></p>
+
+				<script>
+					var x = "";
+					document.getElementById("demo").innerHTML =
+					"Number  : " + Number (x) + "<br>" +
+					"String  : " + String (x) + "<br>" +
+					"Boolean : " + Boolean(x);
+				</script> -->
+
+			<!-- <h2>JavaScript Type Conversion Table - Example 12</h2> -->
+
+				<!-- <p id="demo" style="font-family:courier"></p>
+
+				<script>
+					var x = 20;
+					document.getElementById("demo").innerHTML =
+					"Number  : " + Number(x) +  "<br>" +
+					"String  : " + String(x) +  "<br>" +
+					"Boolean : " + Boolean(x);
+				</script> -->
+
+			<!-- <h2>JavaScript Type Conversion Table - Example 13</h2> -->
+
+				<!-- <p>Converting a text string to other types:</p>
+
+				<p id="demo" style="font-family:courier"></p>
+
+				<script>
+					var x = "twenty";
+					document.getElementById("demo").innerHTML =
+					"Number  :  " + Number(x) + "<br>" +
+					"String  :  " + String(x) + "<br>" +
+					"Boolean :  " + Boolean(x);
+				</script> -->
+
+			<!-- <h2>JavaScript Type Conversion Table - Example 14</h2> -->
+
+				<!-- <p>Converting an empty array to other types:</p>
+
+				<p id="demo" style="font-family:courier"></p>
+
+				<script>
+					var x = [];
+					document.getElementById("demo").innerHTML =
+					"Number  : " + Number(x) + "<br>" +
+					"String  : " + String(x) + "<br>" +
+					"Boolean : " + Boolean(x);
+				</script> -->
+
+			<!-- <h2>JavaScript Type Conversion Table - Example 15</h2> -->
+
+				<!-- <p>Converting an array with one numeric element to other types:</p>
+
+				<p id="demo" style="font-family:courier"></p>
+
+				<script>
+					var x = [20];
+					document.getElementById("demo").innerHTML =
+					"Number  : " + Number(x) + "<br>" +
+					"String  : " + String(x) + "<br>" +
+					"Boolean : " + Boolean(x);
+				</script> -->
+
+			<!-- <h2>JavaScript Type Conversion Table - Example 16</h2> -->
+
+				<!-- <p>Converting an array with two numeric elements to other types:</p>
+
+				<p id="demo" style="font-family:courier"></p>
+
+				<script>
+					var x = [10,20];
+					document.getElementById("demo").innerHTML = 
+					"Number  : " + Number(x) + "<br>" + 
+					"String  : " + String(x) + "<br>" +  
+					"Boolean : " + Boolean(x);
+				</script> -->
+
+			<!-- <h2>JavaScript Type Conversion Table - Example 17</h2> -->
+
+				<!-- <p>Converting an array with one string element to other types:</p>
+
+				<p id="demo" style="font-family:courier"></p>
+
+				<p id="demo" style="font-family:courier"></p>
+
+				<script>
+					var x = ["twenty"];
+					document.getElementById("demo").innerHTML =
+					"Number  : " + Number(x) + "<br>" + 
+					"String  : " + String(x) + "<br>" + 
+					"Boolean : " + Boolean(x);
+				</script> -->
+
+			<!-- <h2>JavaScript Type Conversion Table - Example 18</h2> -->
+
+				<!-- <p>Converting an array with two string element to other types:</p>
+				
+				<p id="demo" style="font-family:courier"></p>
+
+				<script>
+					var x = ["ten", "twenty"];
+					document.getElementById("demo").innerHTML = 
+					"Number  : " + Number(x) + "<br>" +
+					"String  : " + String(x) + "<br>" +
+					"Boolean : " + Boolean(x);
+				</script> -->
+
+			<!-- <h2>JavaScript Type Conversion Table - Example 19</h2> -->
+
+				<!-- <p>Converting a function to other types:</p>
+
+				<p id="demo" style="font-family:courier"></p>
+
+				<script>
+					var x = function(){};
+					document.getElementById("demo").innerHTML =
+					"Number  : " + Number(x) + "<br>" +
+					"String  : " + String(x) + "<br>" +
+					"Boolean : " + Boolean(x);
+				</script> -->
+
+			<!-- <h2>JavaScript Type Conversion Table - Example 20</h2> -->
+
+				<!-- <p>Converting an object to other types:</p>
+
+				<p id="demo" style="font-family:courier"></p>
+
+				<script>
+					var x = {};
+					document.getElementById("demo").innerHTML =
+					"Number  : " + Number(x) + "<br>" +
+					"String  : " + String(x) + "<br>" +
+					"Boolean : " + Boolean(x);
+				</script> -->
+
+			<!-- <h2>JavaScript Type Conversion Table - Example 21</h2> -->
+
+				<!-- <p>Converting null to other types:</p>
+
+				<p id="demo" style="font-family:courier"></p>
+
+				<script>
+					var x = null;
+					document.getElementById("demo").innerHTML = "Number :  " + Number(x) + "<br>" +
+					"String :  " + String(x) + "<br>" +
+					"Boolean : " + Boolean(x);
+				</script> -->
+
+			<h2>JavaScript Type Conversion Table - Example 22</h2>
+
+				<p>Converting undefined to other types:</p>
+
+				<p id="demo" style="font-family:courier"></p>
+
+				<script>
+					var x = undefined;
+					document.getElementById("demo").innerHTML =
+					"Number  : " + Number(x) + "<br>" + 
+					"String  : " + String(x) + "<br>" +
+					"Boolean : " + Boolean(x);
+				</script>
+
+
+
+
+
+			
+
+
+
+		
+
+
+
+
+</body>
+</html>
