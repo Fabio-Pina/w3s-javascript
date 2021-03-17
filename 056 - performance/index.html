@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>JavaScript Performance</title>
+</head>
+<body>
+			<h2>Reduce Activity in Loops - Bad</h2>
+
+				<!-- <script>
+					var i;
+						for(i = 0; i < arr.length; i++) {
+
+						}
+				</script> -->
+
+			<!-- <h2>Reduce Activity in Loops - Better Code</h2> -->
+
+				<!-- <script>
+					var i;
+					var l = arr.length;
+					for (i = 0; i < l; i++) {
+
+					}
+				</script> -->
+
+			<!-- <h2>Reduce DOM Access</h2> -->
+
+				<!-- <p id="demo"></p>
+
+				<script>
+					var obj;
+					obj = document.getElementById("demo");obj.innerHTML = " Hello";
+				</script> -->
+
+			<!-- <h2>Reduce DOM Size</h2> -->
+
+			<!-- <h2>Avoid Unnecessary Variables - Example 1</h2> -->
+
+				<!-- <p id="demo"></p>
+
+				<script>
+					var fullName = firstName + " " + lastName;
+					document.getElementById("demo").innerHTML = fullName;
+				</script> -->
+
+			<!-- <h2>Avoid Unnecessary Variables - Example 2</h2> -->
+
+				<!-- <p id="demo"></p>
+
+				<script>
+					document.getElementById("demo").innerHTML = firstName + " " + lastName;	
+				</script> -->
+
+			<!-- <h2>Delay JavaScript Loading</h2> -->
+
+				<!-- <script>
+					window.onload = function() {
+						var element = document.CreateElement("script");
+						element.src = "myscript.js";
+						document.body.appendChild(element);
+					};
+				</script> -->
+
+			<!-- <h2>Avoid Using with</h2> -->
+
+			
+			
+
+
+</body>
+</html>

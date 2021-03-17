@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Best Practices</title>
+</head>
+<body>
+		<h2>Avoid Global Variables</h2>
+
+		<!-- <h2>Always Declare Local Variables</h2> -->
+
+		<!-- <h2>Declarations on Top</h2> -->
+
+			<!-- <script>
+				// Declare at the beginning
+				var firstName, lastName, price, discount, fullPrice;
+
+				// Use later
+				firstName = "John";
+				lastName = "Doe";
+
+				price = 19.90;
+				discount = 0.10;
+
+				fullPrice = price - discount;
+			</script> -->
+
+			<!-- <p>This also goes for loop variable</p>
+
+			<script>
+				// Declare at the beginning
+				var i;
+
+				// Use later
+				for(i = 0; i < 5; i++) {
+
+				}
+			</script> -->
+
+			<!-- <h2>Initize Variables</h2>
+
+			<script>
+				// Declare and initiate at the beginning
+				var firstName = "";
+				lastName = "";
+				price = 0;
+				discount = 0;
+				fullPrice = 0;
+				myArray = [];
+				myObject = {};
+			</script> -->
+
+			<!-- <h2>Never Declare Number, String, or Boolean Objects - Example 1</h2> -->
+
+				<!-- <p>Never create strings as objects.</p>
+				<p>Strings and objects cannot be safely compared.</p>
+
+				<p id="demo"></p>
+
+				<script>
+					var x = "John"; // x is a string
+					var y = new String("John");
+
+					document.getElementById("demo").innerHTML = x === y;
+				</script> -->
+
+			<!-- <h2>Never Declare Number, String, or Boolean Objects - Example 2</h2> -->
+
+				<!-- <p>Never create strings as objects.</p>
+				<p>JavaScript cannot compare objects.</p>
+
+				<p id="demo"></p>
+
+				<script>
+					var x = new String("John");
+					var y = new String("John");
+					document.getElementById("demo").innerHTML = (x == y);
+				</script> -->
+
+			<!-- <h2>Don't use new Object()</h2> -->
+
+				<!-- <p id="demo"></p>
+
+				<script>
+					var x1 = {};
+					var x2 = "";
+					var x3 = 0;
+					var x4 = false;
+					var x5 = [];
+					var x6 = /()/;
+					var x7 = function(){};
+
+					document.getElementById("demo").innerHTML =
+					"x1: " + typeof x1 + "<br>" +
+					"x2: " + typeof x2 + "<br>" +
+					"x3: " + typeof x3 + "<br>" +
+					"x4: " + typeof x4 + "<br>" +
+					"x5: " + typeof x5 + "<br>" +
+					"x6: " + typeof x6 + "<br>" +
+					"x7: " + typeof x7 + "<br>";
+				</script> -->
+
+			<!-- <h2>Beware of Automatic Type Conversions - Example 1</h2> -->
+
+				<!-- <p id="demo"></p>
+
+				<script>
+					var x = 10
+					var y = 5
+					document.getElementById("demo").innerHTML = (x / y)
+				</script> -->
+
+			<!-- <h2>Beware of Automatic Type Conversions - Example 2</h2> -->
+
+				<!-- <p id="demo"></p>
+
+				<script>
+					var x = 5
+					//x = 5 + 7;    // x.valueOf() is 12, typeof x is a number
+					//x = 5 + "7";  // x.valueOf() is 57, typeof x is a string
+					//x = "5" + 7;  // x.valueOf() is 57, typeof x is a string
+					//x = 5 - 7;    // x.valueOf() is -2, typeof x is a number
+					//x = 5 - "7";  // x.valueOf() is -2, typeof x is a number
+					//x = "5" - 7;  // x.valueOf() is -2, typeof x is a number
+					//x = 5 - "x";  // x.valueOf() is NaN, typeof x is a number
+
+					document.getElementById("demo").innerHTML = x.valueOf();
+				</script> -->
+
+			<!-- <h2>Beware of Automatic Type Conversions - Example 3</h2> -->
+
+					<!-- <p id="demo"></p>
+
+					<script>
+						document.getElementById("demo").innerHTML = "Hello" - "Dolly";
+					</script> -->
+
+			<!-- <h2>Use == Comparasion</h2> -->
+
+					<!-- <p>Remove the comment (at the beginning of each line) to test each case:</p>
+
+					<p id="demo"></p>
+
+					<script>
+						var x;
+						// x = (0 = ""); // true
+						// x = (1 = "1"); // true
+						// x = (1 = true); // true
+						// x = (0 === ""); // false
+						// x = (1 === "1"); // false
+						// x = (1 === "true"); // false
+						document.getElementById("demo").innerHTML = x;
+					</script> -->
+
+				<!-- <h2>Use Parameters Default</h2> -->
+
+					<!-- <p>Setting a default value to a function parameter.</p>
+				
+					<p id="demo"></p>
+
+					<script>
+						function myFunction(x, y) {
+							if(y === undefined) {
+								y = 0;
+							}
+							return x * y;
+						}
+						document.getElementById("demo").innerHTML = myFunction(4)
+					</script>
+			 -->
+
+			<!-- <h2>End Your Switches with Defaults</h2> -->
+
+			 <!-- <p id="demo"></p>
+
+			 <script>
+				 var day;
+				 switch (new Date().getDay()) {
+					 case 0: 
+					 day = "Sunday";
+					 break;
+					 case 1: 
+					 day = "Monday";
+					 break;
+					 case 2: 
+					 day = "Tuesday";
+					 break;
+					 case 3: 
+					 day = "Wednesday";
+					 break;
+					 case 4: 
+					 day = "Thursday";
+					 break;
+					 case 5: 
+					 day = "Friday";
+					 break;
+					 case 6: 
+					 day = "Saturday";
+					 break;
+					 default:
+						 day = "Unknown"; 
+						}
+					document.getElementById("demo").innerHTML = "Today is " + day;
+			 </script> -->
+
+			<h2>Avoid Using Eval()</h2>
+
+			 	
+
+
+					
+
+
+
+				
+
+</body>
+</html>
